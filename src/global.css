@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/open-sans";
+@import "@fontsource/open-sans/700.css";
+
+@layer base {
+  :root {
+    --dark: #33323d;
+    --dark-hover: #33323d;
+    --highlight: #f3ff83;
+    --seafoam: #83ffcd;
+    --skyblue: #88d5fe;
+  }
+
+  body {
+    font-family: 'Open Sans';
+    line-height: 1;
+    background-color: var(--dark);
+    color: whitesmoke;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}

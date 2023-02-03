@@ -1,0 +1,29 @@
+import { useState } from 'react';
+import Header from './components/Header';
+import Body from './components/Body';
+import Footer from './components/Footer';
+
+function App() {
+  const pages = [
+    { name: 'about me', displayName: 'About Me' },
+    { name: 'projects', displayName: 'My Work' }
+  ];
+
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+
+  return (
+    <section className='flex flex-col h-screen'>
+    <Header 
+      pages={pages}
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage} 
+    />
+    <Body
+      currentPage={currentPage}
+    />
+    <Footer/>
+    </section>
+  )
+}
+
+export default App;
