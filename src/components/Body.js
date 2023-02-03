@@ -7,7 +7,7 @@ export default function Body ({currentPage}) {
     <main className='flex flex-col flex-grow linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)) p-6 sm:p-12'>
       <div className='mt-5 flex justify-between items-end'>
         <h2 id='page-title' className='text-[36px] font-bold'>
-          {currentPage.displayName}
+          {currentPage.displayName} - Click to be directed to the website
         </h2>
 
       </div>
