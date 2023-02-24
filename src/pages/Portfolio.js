@@ -1,6 +1,6 @@
 import Project from '../components/Project';
 
-import Horiseon from '../images/1.png';
+import JJAMMSTACK from '../images/1.png';
 import Quiz from '../images/2.png';
 import Calendar from '../images/3.png';
 import Tracker from '../images/4.png';
@@ -9,10 +9,10 @@ import Weather from '../images/5.png';
 export default function Portfolio () {
   const projects = [
     {
-      name: 'Horiseon Refactor',
-      subtitle: 'Refactoring a website',
-      url: 'https://github.com/FleischmanJ88/01-Horiseon-Refactor',
-      image: Horiseon
+      name: 'JJAMMSTACK',
+      subtitle: 'JJAMMSTACK-Social Media',
+      url: 'https://github.com/jaqsentanner/jjammstack',
+      image: JJAMMSTACK
     },
     {
       name: 'Quiz Generator',
@@ -42,7 +42,7 @@ export default function Portfolio () {
   ]
   
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-white'>
       {projects.map((project) => (
         <Project key={project.name}
           project={project}
