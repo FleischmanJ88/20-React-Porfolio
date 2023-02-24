@@ -14,7 +14,7 @@ export default function Body ({currentPage}) {
       <div className='mb-5 after:block after:bg-dark after:h-[5px] after:mt-2'></div>
       
       
-      <section id='page-body' className='text-[20px] leading-relaxed'>
+      <section id='page-body' className='text-[20px] leading-relaxed text-white'>
         {currentPage.name === 'about me' ? <About/> : null}
         {currentPage.name === 'projects' ? <Portfolio/> : null}
         

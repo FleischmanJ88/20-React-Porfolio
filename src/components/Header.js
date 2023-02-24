@@ -10,7 +10,7 @@ export default function Header ({pages, currentPage, setCurrentPage}) {
 
     <header>
       <section id="top-bar" className="flex items-center flex-col sm:flex-row bg-dark pb-3 sm:py-3 justify-between ">
-        <h1 className="max-sm:w-[100vw] bg-highlight text-dark text-center sm:text-left font-bold p-3 md:pl-[40px] text-[30px] sm:text-[24px] md:text-[36px]">{name}</h1>
+        <h1 className="max-sm:w-[100vw] bg-highlight text-white text-center sm:text-left font-bold p-3 md:pl-[40px] text-[30px] sm:text-[24px] md:text-[36px]">{name}</h1>
         <Nav 
           pages={pages}
           currentPage={currentPage}
@@ -21,7 +21,7 @@ export default function Header ({pages, currentPage, setCurrentPage}) {
         <br></br>
         <img id='avatar' className='w-[250px] h-[250px] m-[-30px] md:m-[-20px] rounded-full border-dark shadow shadow-dark' src={avatar} alt='Profile Pic. ' />
         
-        <div className='absolute md:static bottom-[-10px] p-[15px] bg-highlight text-dark font-bold text-[20px] sm:text-[24px] md:text-[30px] mb-[20px]  mr-0 md:mr-[30px]' id='subtitle'>
+        <div className='absolute md:static bottom-[-10px] p-[15px] bg-highlight text-white font-bold text-[20px] sm:text-[24px] md:text-[30px] mb-[20px]  mr-0 md:mr-[30px]' id='subtitle'>
           {subtitle}
         </div>
       </section>
